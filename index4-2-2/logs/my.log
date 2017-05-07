@@ -1,0 +1,7 @@
+2017-04-11 11:11:30,126  INFO ApplicationTests:48 ---- Starting ApplicationTests on DESKTOP-30C6FC7 with PID 14360 (started by linxianqing in D:\code\poject\demo\demo\index4-2-2)
+2017-04-11 11:11:30,126 DEBUG ApplicationTests:51 ---- Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2017-04-11 11:11:30,127  INFO ApplicationTests:637 ---- No active profile set, falling back to default profiles: default
+2017-04-11 11:11:30,978  INFO ApplicationTests:57 ---- Started ApplicationTests in 1.082 seconds (JVM running for 1.786)
+2017-04-11 11:11:31,018  INFO ApplicationTests:18 ---- 输出info
+2017-04-11 11:11:31,019 DEBUG ApplicationTests:19 ---- 输出debug
+2017-04-11 11:11:31,019 ERROR ApplicationTests:20 ---- 输出error

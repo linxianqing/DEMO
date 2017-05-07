@@ -1,0 +1,75 @@
+2017-05-04 14:24:59,068 ERROR LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field netState in com.lingbang.controller.UserController required a bean of type 'com.lingbang.entity.base.NetState' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.lingbang.entity.base.NetState' in your configuration.
+
+2017-05-04 14:45:57,929 ERROR LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userService in com.lingbang.controller.UserController required a bean of type 'com.lingbang.service.UserService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.lingbang.service.UserService' in your configuration.
+
+2017-05-04 14:48:23,489 ERROR LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userMapper in com.lingbang.service.impl.UserServiceimpl required a bean of type 'com.lingbang.mapper.UserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.lingbang.mapper.UserMapper' in your configuration.
+
+2017-05-04 14:49:33,539 ERROR LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userMapper in com.lingbang.service.impl.UserServiceimpl required a bean of type 'com.lingbang.mapper.UserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.lingbang.mapper.UserMapper' in your configuration.
+
+2017-05-04 14:51:14,381 ERROR LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userMapper in com.lingbang.service.impl.UserServiceimpl required a bean of type 'com.lingbang.mapper.UserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.lingbang.mapper.UserMapper' in your configuration.
+

@@ -1,0 +1,776 @@
+2017-05-06 10:34:48,350  INFO LingbangApplication:48 - Starting LingbangApplication on DESKTOP-30C6FC7 with PID 10580 (D:\code\poject\demo\demo\lingbang\target\classes started by linxianqing in D:\code\poject\demo\demo)
+2017-05-06 10:34:48,360  INFO LingbangApplication:637 - No active profile set, falling back to default profiles: default
+2017-05-06 10:34:48,464  INFO AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1eb0666: startup date [Sat May 06 10:34:48 CST 2017]; root of context hierarchy
+2017-05-06 10:34:49,074  INFO Version:30 - HV000001: Hibernate Validator 5.3.4.Final
+2017-05-06 10:34:55,401  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bc43ddeb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-06 10:34:56,367  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-05-06 10:34:56,472  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 8016 ms
+2017-05-06 10:34:56,688  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-06 10:34:56,689  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-06 10:34:56,690  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-06 10:34:56,690  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-06 10:34:56,690  INFO FilterRegistrationBean:258 - Mapping filter: 'corsFilter' to: [/*]
+2017-05-06 10:34:56,691  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-06 10:34:57,478  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1eb0666: startup date [Sat May 06 10:34:48 CST 2017]; root of context hierarchy
+2017-05-06 10:34:57,543  INFO RequestMappingHandlerMapping:543 - Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.lingbang.controller.HelloController.hello()
+2017-05-06 10:34:57,545  INFO RequestMappingHandlerMapping:543 - Mapped "{[/register],methods=[POST]}" onto public com.lingbang.entity.base.NetState com.lingbang.controller.UserController.register(com.lingbang.mapper.User)
+2017-05-06 10:34:57,547  INFO RequestMappingHandlerMapping:543 - Mapped "{[/doLogin],methods=[POST]}" onto public com.lingbang.entity.base.NetState com.lingbang.controller.UserController.doLogin(com.lingbang.mapper.User)
+2017-05-06 10:34:57,550  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-06 10:34:57,551  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-06 10:34:57,600  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 10:34:57,600  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 10:34:57,668  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 10:34:58,060  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-05-06 10:34:58,176  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-05-06 10:34:58,238  INFO TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8080 (http)
+2017-05-06 10:34:58,244  INFO LingbangApplication:57 - Started LingbangApplication in 10.582 seconds (JVM running for 11.717)
+2017-05-06 10:35:36,110  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-06 10:35:36,150  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+2017-05-06 10:35:36,256  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 10:35:36,256  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 10:35:36,257  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 10:35:36,259  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 10:35:36,260  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='P61113275', password='1234564444', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 10:35:36,265  INFO WebLogAspect:57 - 响应 : NetState{data='登录失败', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 10:35:36,265  INFO WebLogAspect:58 - 花费时间 : 9
+2017-05-06 10:37:30,804  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 10:37:30,805  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 10:37:30,805  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 10:37:30,805  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 10:37:30,805  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='P61113275', password='1234564444', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 10:37:30,806  INFO WebLogAspect:57 - 响应 : NetState{data='登录失败', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 10:37:30,806  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 10:39:11,589  INFO AnnotationConfigEmbeddedWebApplicationContext:987 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1eb0666: startup date [Sat May 06 10:34:48 CST 2017]; root of context hierarchy
+2017-05-06 10:39:11,592  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-05-06 10:39:12,077  INFO LingbangApplication:48 - Starting LingbangApplication on DESKTOP-30C6FC7 with PID 10580 (D:\code\poject\demo\demo\lingbang\target\classes started by linxianqing in D:\code\poject\demo\demo)
+2017-05-06 10:39:12,077  INFO LingbangApplication:637 - No active profile set, falling back to default profiles: default
+2017-05-06 10:39:12,083  INFO AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d654856: startup date [Sat May 06 10:39:12 CST 2017]; root of context hierarchy
+2017-05-06 10:39:15,840  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bc43ddeb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-06 10:39:15,944  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-05-06 10:39:15,958  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 3875 ms
+2017-05-06 10:39:16,028  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-06 10:39:16,028  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-06 10:39:16,029  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-06 10:39:16,029  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-06 10:39:16,029  INFO FilterRegistrationBean:258 - Mapping filter: 'corsFilter' to: [/*]
+2017-05-06 10:39:16,030  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-06 10:39:16,342  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d654856: startup date [Sat May 06 10:39:12 CST 2017]; root of context hierarchy
+2017-05-06 10:39:16,354  INFO RequestMappingHandlerMapping:543 - Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.lingbang.controller.HelloController.hello()
+2017-05-06 10:39:16,355  INFO RequestMappingHandlerMapping:543 - Mapped "{[/register],methods=[POST]}" onto public com.lingbang.entity.base.NetState com.lingbang.controller.UserController.register(com.lingbang.mapper.User)
+2017-05-06 10:39:16,355  INFO RequestMappingHandlerMapping:543 - Mapped "{[/doLogin],methods=[POST]}" onto public com.lingbang.entity.base.NetState com.lingbang.controller.UserController.doLogin(com.lingbang.mapper.User)
+2017-05-06 10:39:16,357  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-06 10:39:16,357  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-06 10:39:16,377  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 10:39:16,378  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 10:39:16,404  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 10:39:16,556  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-05-06 10:39:16,665  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-05-06 10:39:16,678  INFO TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8080 (http)
+2017-05-06 10:39:16,681  INFO LingbangApplication:57 - Started LingbangApplication in 4.646 seconds (JVM running for 270.155)
+2017-05-06 10:39:53,102  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-06 10:39:53,110  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2017-05-06 10:39:53,124  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 10:39:53,124  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 10:39:53,125  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 10:39:53,125  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 10:39:53,125  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 10:39:53,130  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 10:39:53,130  INFO WebLogAspect:58 - 花费时间 : 6
+2017-05-06 11:44:30,614  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 11:44:30,620  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 11:44:30,621  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 11:44:30,621  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 11:44:30,621  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 11:44:30,623  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 11:44:30,623  INFO WebLogAspect:58 - 花费时间 : 9
+2017-05-06 11:49:54,075  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 11:49:54,075  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 11:49:54,076  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 11:49:54,076  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 11:49:54,077  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 11:49:54,077  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 11:49:54,078  INFO WebLogAspect:58 - 花费时间 : 3
+2017-05-06 11:58:15,863  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 11:58:15,864  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 11:58:15,864  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 11:58:15,865  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 11:58:15,865  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 11:58:15,866  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 11:58:15,866  INFO WebLogAspect:58 - 花费时间 : 3
+2017-05-06 11:58:55,733  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 11:58:55,734  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 11:58:55,734  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 11:58:55,734  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 11:58:55,735  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 11:58:55,735  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 11:58:55,735  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 12:01:52,870  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 12:01:52,871  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 12:01:52,871  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 12:01:52,872  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 12:01:52,872  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 12:01:52,872  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 12:01:52,872  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 12:02:55,708  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 12:02:55,708  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 12:02:55,708  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 12:02:55,708  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 12:02:55,710  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 12:02:55,710  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 12:02:55,710  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 12:03:34,418  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 12:03:34,418  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 12:03:34,419  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 12:03:34,419  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 12:03:34,419  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 12:03:34,420  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 12:03:34,420  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 12:03:46,829  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 12:03:46,831  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 12:03:46,832  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 12:03:46,832  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 12:03:46,832  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 12:03:46,833  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 12:03:46,833  INFO WebLogAspect:58 - 花费时间 : 4
+2017-05-06 12:06:24,701  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 12:06:24,701  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 12:06:24,702  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 12:06:24,702  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 12:06:24,702  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 12:06:24,702  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 12:06:24,703  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 12:22:04,797  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 12:22:04,797  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 12:22:04,798  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 12:22:04,798  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 12:22:04,798  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 12:22:04,798  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 12:22:04,798  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 12:23:01,918  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 12:23:01,919  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 12:23:01,919  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 12:23:01,919  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 12:23:01,919  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 12:23:01,920  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 12:23:01,920  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 12:35:28,875  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 12:35:28,876  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 12:35:28,876  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 12:35:28,876  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 12:35:28,876  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='ng-value="1"', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 12:35:28,877  INFO WebLogAspect:57 - 响应 : NetState{data='登录失败', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 12:35:28,877  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 12:36:05,087  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 12:36:05,087  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 12:36:05,087  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 12:36:05,088  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 12:36:05,088  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='type="hidden"', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 12:36:05,088  INFO WebLogAspect:57 - 响应 : NetState{data='登录失败', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 12:36:05,088  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 12:41:58,961  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 12:41:58,962  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 12:41:58,963  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 12:41:58,963  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 12:41:58,963  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 12:41:58,964  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 12:41:58,964  INFO WebLogAspect:58 - 花费时间 : 3
+2017-05-06 12:42:21,241  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 12:42:21,241  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 12:42:21,242  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 12:42:21,242  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 12:42:21,242  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 12:42:21,243  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 12:42:21,243  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 12:43:21,936  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 12:43:21,936  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 12:43:21,936  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 12:43:21,937  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 12:43:21,937  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 12:43:21,937  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 12:43:21,937  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 12:43:40,396  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 12:43:40,396  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 12:43:40,396  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 12:43:40,397  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 12:43:40,397  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 12:43:40,397  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 12:43:40,397  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 12:43:59,954  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 12:43:59,955  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 12:43:59,955  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 12:43:59,955  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 12:43:59,955  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 12:43:59,956  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 12:43:59,956  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 12:44:00,367  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 12:44:00,367  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 12:44:00,368  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 12:44:00,368  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 12:44:00,368  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 12:44:00,369  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 12:44:00,369  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 12:45:58,118  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 12:45:58,118  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 12:45:58,119  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 12:45:58,119  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 12:45:58,119  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 12:45:58,119  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 12:45:58,120  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 12:46:14,719  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 12:46:14,719  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 12:46:14,720  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 12:46:14,720  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 12:46:14,720  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 12:46:14,720  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 12:46:14,720  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 12:50:49,649  WARN DefaultHandlerExceptionResolver:189 - Resolved exception caused by Handler execution: org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported
+2017-05-06 12:51:32,264  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 12:51:32,265  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 12:51:32,265  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 12:51:32,265  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 12:51:32,266  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 12:51:32,266  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 12:51:32,266  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 13:09:49,526  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 13:09:49,532  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 13:09:49,534  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 13:09:49,535  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 13:09:49,535  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 13:09:49,536  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 13:09:49,536  INFO WebLogAspect:58 - 花费时间 : 10
+2017-05-06 13:11:54,114  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 13:11:54,114  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 13:11:54,115  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 13:11:54,115  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 13:11:54,115  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 13:11:54,115  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 13:11:54,116  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 13:28:09,920  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 13:28:09,921  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 13:28:09,921  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 13:28:09,921  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 13:28:09,922  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 13:28:09,923  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 13:28:09,923  INFO WebLogAspect:58 - 花费时间 : 3
+2017-05-06 13:29:05,383  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 13:29:05,384  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 13:29:05,387  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 13:29:05,388  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 13:29:05,388  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 13:29:05,389  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 13:29:05,389  INFO WebLogAspect:58 - 花费时间 : 6
+2017-05-06 13:30:46,523  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 13:30:46,523  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 13:30:46,524  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 13:30:46,524  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 13:30:46,524  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 13:30:46,524  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 13:30:46,524  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:04:49,364  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:04:49,369  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:04:49,370  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:04:49,370  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:04:49,372  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:04:49,373  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:04:49,373  INFO WebLogAspect:58 - 花费时间 : 10
+2017-05-06 14:06:42,487  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:06:42,488  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:06:42,488  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:06:42,488  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:06:42,489  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:06:42,489  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:06:42,489  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 14:08:10,823  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:08:10,824  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:08:10,824  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:08:10,824  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:08:10,826  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:08:10,826  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:08:10,827  INFO WebLogAspect:58 - 花费时间 : 4
+2017-05-06 14:10:37,075  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:10:37,075  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:10:37,075  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:10:37,075  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:10:37,075  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:10:37,076  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:10:37,076  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:12:18,611  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:12:18,611  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:12:18,611  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:12:18,612  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:12:18,612  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:12:18,612  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:12:18,612  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:16:12,953  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:16:12,954  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:16:12,954  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:16:12,955  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:16:12,955  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:16:12,956  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:16:12,956  INFO WebLogAspect:58 - 花费时间 : 3
+2017-05-06 14:16:22,689  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:16:22,689  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:16:22,689  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:16:22,689  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:16:22,689  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:16:22,690  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:16:22,690  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:17:28,337  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:17:28,337  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:17:28,338  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:17:28,338  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:17:28,339  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:17:28,340  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:17:28,340  INFO WebLogAspect:58 - 花费时间 : 3
+2017-05-06 14:22:26,498  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:22:26,499  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:22:26,534  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:22:26,534  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:22:26,534  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:22:26,534  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:22:26,534  INFO WebLogAspect:58 - 花费时间 : 36
+2017-05-06 14:27:23,401  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:27:23,401  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:27:23,401  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:27:23,401  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:27:23,402  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:27:23,403  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:27:23,404  INFO WebLogAspect:58 - 花费时间 : 3
+2017-05-06 14:27:43,865  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:27:43,866  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:27:43,866  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:27:43,867  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:27:43,868  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:27:43,868  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:27:43,868  INFO WebLogAspect:58 - 花费时间 : 3
+2017-05-06 14:30:02,632  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:30:02,632  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:30:02,632  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:30:02,632  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:30:02,633  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:30:02,633  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:30:02,633  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:38:51,764  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:38:51,770  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:38:51,770  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:38:51,772  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:38:51,772  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:38:51,772  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:38:51,772  INFO WebLogAspect:58 - 花费时间 : 8
+2017-05-06 14:38:54,350  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:38:54,350  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:38:54,358  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:38:54,358  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:38:54,359  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:38:54,359  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:38:54,359  INFO WebLogAspect:58 - 花费时间 : 9
+2017-05-06 14:38:56,529  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:38:56,529  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:38:56,530  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:38:56,530  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:38:56,530  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:38:56,530  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:38:56,530  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:38:58,383  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:38:58,384  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:38:58,384  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:38:58,384  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:38:58,385  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:38:58,386  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:38:58,386  INFO WebLogAspect:58 - 花费时间 : 3
+2017-05-06 14:39:13,083  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:39:13,084  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:39:13,085  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:39:13,085  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:39:13,085  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:39:13,085  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:39:13,085  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 14:39:31,281  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:39:31,282  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:39:31,283  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:39:31,285  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:39:31,285  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:39:31,286  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:39:31,286  INFO WebLogAspect:58 - 花费时间 : 5
+2017-05-06 14:39:49,201  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:39:49,201  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:39:49,201  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:39:49,201  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:39:49,201  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:39:49,201  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:39:49,202  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:41:02,099  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:41:02,099  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:41:02,100  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:41:02,100  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:41:02,100  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:41:02,100  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:41:02,102  INFO WebLogAspect:58 - 花费时间 : 3
+2017-05-06 14:41:04,087  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:41:04,087  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:41:04,087  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:41:04,087  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:41:04,087  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:41:04,088  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:41:04,088  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:42:35,108  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:42:35,108  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:42:35,109  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:42:35,109  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:42:35,110  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:42:35,110  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:42:35,110  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 14:42:37,495  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:42:37,495  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:42:37,496  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:42:37,496  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:42:37,496  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:42:37,497  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:42:37,497  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 14:42:57,307  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:42:57,308  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:42:57,308  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:42:57,308  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:42:57,308  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:42:57,308  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:42:57,310  INFO WebLogAspect:58 - 花费时间 : 3
+2017-05-06 14:42:59,212  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:42:59,212  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:42:59,212  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:42:59,212  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:42:59,213  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:42:59,213  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:42:59,213  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:43:01,374  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:01,375  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:01,375  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:01,376  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:01,376  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:01,376  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:01,376  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 14:43:39,774  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:39,775  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:39,775  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:39,775  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:39,775  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:39,775  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:39,776  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 14:43:45,168  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:45,169  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:45,169  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:45,169  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:45,169  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:45,169  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:45,169  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:43:45,726  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:45,726  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:45,726  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:45,726  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:45,726  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:45,727  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:45,727  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:43:45,949  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:45,950  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:45,951  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:45,951  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:45,951  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:45,951  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:45,951  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 14:43:46,148  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:46,149  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:46,149  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:46,149  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:46,149  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:46,149  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:46,149  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:43:46,348  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:46,349  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:46,349  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:46,349  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:46,349  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:46,349  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:46,350  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 14:43:46,702  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:46,702  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:46,703  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:46,703  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:46,703  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:46,703  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:46,703  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:43:46,896  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:46,897  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:46,897  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:46,897  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:46,897  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:46,897  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:46,897  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:43:47,075  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:47,076  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:47,076  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:47,076  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:47,077  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:47,077  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:47,077  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 14:43:47,280  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:47,281  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:47,281  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:47,281  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:47,282  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:47,282  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:47,282  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 14:43:47,460  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:47,460  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:47,460  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:47,461  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:47,461  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:47,461  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:47,461  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:43:47,659  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:47,660  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:47,660  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:47,660  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:47,660  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:47,661  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:47,661  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 14:43:47,851  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:47,851  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:47,851  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:47,852  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:47,852  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:47,852  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:47,852  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:43:48,024  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:48,025  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:48,025  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:48,025  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:48,025  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:48,025  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:48,025  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:43:48,204  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:48,204  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:48,204  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:48,204  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:48,205  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:48,205  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:48,205  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:43:48,411  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:48,411  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:48,411  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:48,411  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:48,412  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:48,412  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:48,412  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 14:43:48,606  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:48,607  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:48,608  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:48,609  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:48,609  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:48,609  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:48,609  INFO WebLogAspect:58 - 花费时间 : 3
+2017-05-06 14:43:48,777  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:48,778  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:48,778  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:48,778  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:48,779  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:48,779  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:48,779  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 14:43:48,969  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:48,972  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:48,972  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:48,972  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:48,972  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:48,972  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:48,972  INFO WebLogAspect:58 - 花费时间 : 3
+2017-05-06 14:43:49,171  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 14:43:49,172  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 14:43:49,172  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 14:43:49,172  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 14:43:49,172  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 14:43:49,173  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 14:43:49,173  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 15:31:06,492  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:31:06,496  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:31:06,496  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:31:06,498  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:31:06,498  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:31:06,499  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:31:06,502  INFO WebLogAspect:58 - 花费时间 : 10
+2017-05-06 15:31:17,520  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:31:17,520  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:31:17,521  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:31:17,521  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:31:17,521  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:31:17,521  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:31:17,521  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 15:34:30,928  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:34:30,928  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:34:30,929  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:34:30,929  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:34:30,930  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:34:30,930  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:34:30,931  INFO WebLogAspect:58 - 花费时间 : 4
+2017-05-06 15:34:36,564  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:34:36,564  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:34:36,564  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:34:36,565  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:34:36,565  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:34:36,565  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:34:36,565  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 15:34:41,674  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:34:41,674  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:34:41,674  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:34:41,675  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:34:41,675  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:34:41,675  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:34:41,675  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 15:34:44,311  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:34:44,311  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:34:44,311  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:34:44,312  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:34:44,312  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:34:44,312  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:34:44,313  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 15:35:15,938  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:35:15,938  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:35:15,938  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:35:15,939  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:35:15,940  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:35:15,940  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:35:15,940  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 15:36:10,630  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:36:10,631  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:36:10,631  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:36:10,631  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:36:10,631  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:36:10,632  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:36:10,632  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 15:37:54,818  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:37:54,819  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:37:54,819  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:37:54,819  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:37:54,819  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:37:54,819  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:37:54,820  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 15:38:10,337  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:38:10,338  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:38:10,338  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:38:10,338  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:38:10,338  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:38:10,339  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:38:10,339  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 15:38:45,929  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:38:45,929  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:38:45,929  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:38:45,929  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:38:45,930  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:38:45,930  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:38:45,930  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 15:39:14,450  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:39:14,451  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:39:14,451  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:39:14,451  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:39:14,451  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:39:14,451  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:39:14,451  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 15:39:58,643  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:39:58,643  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:39:58,643  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:39:58,644  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:39:58,644  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:39:58,645  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:39:58,645  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 15:42:02,083  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:42:02,084  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:42:02,084  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:42:02,084  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:42:02,084  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:42:02,084  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:42:02,085  INFO WebLogAspect:58 - 花费时间 : 2
+2017-05-06 15:43:04,308  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:43:04,308  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:43:04,308  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:43:04,309  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:43:04,309  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:43:04,309  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:43:04,309  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 15:44:16,536  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:44:16,536  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:44:16,537  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:44:16,537  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:44:16,537  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:44:16,537  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:44:16,537  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 15:45:22,882  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:45:22,882  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:45:22,882  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:45:22,883  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:45:22,883  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:45:22,883  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:45:22,883  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 15:54:58,252  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:54:58,258  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:54:58,259  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:54:58,259  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:54:58,259  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:54:58,259  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:54:58,260  INFO WebLogAspect:58 - 花费时间 : 8
+2017-05-06 15:57:29,506  INFO WebLogAspect:46 - 请求URL : http://localhost:8080/doLogin
+2017-05-06 15:57:29,506  INFO WebLogAspect:47 - 请求方法 : POST
+2017-05-06 15:57:29,506  INFO WebLogAspect:48 - IP : 0:0:0:0:0:0:0:1
+2017-05-06 15:57:29,506  INFO WebLogAspect:49 - class方法 : com.lingbang.controller.UserController.doLogin
+2017-05-06 15:57:29,507  INFO WebLogAspect:50 - ARGS : [User{oid='null', userId='null', username='admin123', password='admin123', name='null', telno='null', phoneno='null', creditno='null', address='null', sex=null, birthday='null', ownehouse='null', ownepro='null', classes=null}]
+2017-05-06 15:57:29,507  INFO WebLogAspect:57 - 响应 : NetState{data='登录成功', errorCode=0, Json=null, info='null', success=true}
+2017-05-06 15:57:29,507  INFO WebLogAspect:58 - 花费时间 : 1
+2017-05-06 17:50:14,430  INFO AnnotationConfigEmbeddedWebApplicationContext:987 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d654856: startup date [Sat May 06 10:39:12 CST 2017]; root of context hierarchy
+2017-05-06 17:50:14,504  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-05-06 17:50:15,694  INFO LingbangApplication:48 - Starting LingbangApplication on DESKTOP-30C6FC7 with PID 10580 (D:\code\poject\demo\demo\lingbang\target\classes started by linxianqing in D:\code\poject\demo\demo)
+2017-05-06 17:50:15,694  INFO LingbangApplication:637 - No active profile set, falling back to default profiles: default
+2017-05-06 17:50:15,707  INFO AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@555ab364: startup date [Sat May 06 17:50:15 CST 2017]; root of context hierarchy
+2017-05-06 17:50:22,386  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bc43ddeb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-06 17:50:22,512  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-05-06 17:50:22,527  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 6822 ms
+2017-05-06 17:50:22,601  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-06 17:50:22,601  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-06 17:50:22,602  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-06 17:50:22,602  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-06 17:50:22,602  INFO FilterRegistrationBean:258 - Mapping filter: 'corsFilter' to: [/*]
+2017-05-06 17:50:22,602  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-06 17:50:22,982  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@555ab364: startup date [Sat May 06 17:50:15 CST 2017]; root of context hierarchy
+2017-05-06 17:50:23,000  INFO RequestMappingHandlerMapping:543 - Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.lingbang.controller.HelloController.hello()
+2017-05-06 17:50:23,001  INFO RequestMappingHandlerMapping:543 - Mapped "{[/register],methods=[POST]}" onto public com.lingbang.entity.base.NetState com.lingbang.controller.UserController.register(com.lingbang.mapper.User)
+2017-05-06 17:50:23,001  INFO RequestMappingHandlerMapping:543 - Mapped "{[/doLogin],methods=[POST]}" onto public com.lingbang.entity.base.NetState com.lingbang.controller.UserController.doLogin(com.lingbang.mapper.User)
+2017-05-06 17:50:23,002  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-06 17:50:23,002  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-06 17:50:23,028  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 17:50:23,028  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 17:50:23,061  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 17:50:23,297  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-05-06 17:50:23,461  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-05-06 17:50:23,481  INFO TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8080 (http)
+2017-05-06 17:50:23,485  INFO LingbangApplication:57 - Started LingbangApplication in 7.949 seconds (JVM running for 26136.958)
+2017-05-06 18:42:24,445  INFO LingbangApplication:48 - Starting LingbangApplication on DESKTOP-30C6FC7 with PID 11252 (D:\code\poject\demo\demo\lingbang\target\classes started by linxianqing in D:\code\poject\demo\demo)
+2017-05-06 18:42:24,473  INFO LingbangApplication:637 - No active profile set, falling back to default profiles: default
+2017-05-06 18:42:24,643  INFO AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ad5feaa: startup date [Sat May 06 18:42:24 CST 2017]; root of context hierarchy
+2017-05-06 18:42:25,245  INFO Version:30 - HV000001: Hibernate Validator 5.3.4.Final
+2017-05-06 18:42:35,217  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8e2a8ead] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-06 18:42:38,951  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-05-06 18:42:39,425  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 14795 ms
+2017-05-06 18:42:40,082  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-06 18:42:40,084  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-06 18:42:40,087  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-06 18:42:40,088  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-06 18:42:40,088  INFO FilterRegistrationBean:258 - Mapping filter: 'corsFilter' to: [/*]
+2017-05-06 18:42:40,089  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-06 18:42:42,888  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ad5feaa: startup date [Sat May 06 18:42:24 CST 2017]; root of context hierarchy
+2017-05-06 18:42:43,182  INFO RequestMappingHandlerMapping:543 - Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.lingbang.controller.HelloController.hello()
+2017-05-06 18:42:43,189  INFO RequestMappingHandlerMapping:543 - Mapped "{[/register],methods=[POST]}" onto public com.lingbang.entity.base.NetState com.lingbang.controller.UserController.register(com.lingbang.mapper.User)
+2017-05-06 18:42:43,211  INFO RequestMappingHandlerMapping:543 - Mapped "{[/doLogin],methods=[POST]}" onto public com.lingbang.entity.base.NetState com.lingbang.controller.UserController.doLogin(com.lingbang.mapper.User)
+2017-05-06 18:42:43,217  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-06 18:42:43,218  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-06 18:42:43,703  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 18:42:43,704  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 18:42:43,827  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-06 18:42:45,295  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-05-06 18:42:45,514  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-05-06 18:42:46,059  INFO TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8080 (http)
+2017-05-06 18:42:46,092  INFO LingbangApplication:57 - Started LingbangApplication in 22.494 seconds (JVM running for 24.215)

@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: dev     #多环境配置文件激活属性    开发 dev  测试 test
+#  jpa:
+#    properties:
+#      hibernate:
+#        hbm2ddl:
+#          auto: create-drop   #create   create-drop   update    validate

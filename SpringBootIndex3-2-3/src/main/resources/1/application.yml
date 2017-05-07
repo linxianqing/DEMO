@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: data-multidatasource
+  datasource:
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,log4j
+    one:
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: root
+      url: jdbc:mysql://localhost:3306/test1?characterEncoding=utf8&useSSL=true
+    two:
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: root
+      url: jdbc:mysql://localhost:3306/test2?characterEncoding=utf8&useSSL=true
+#    three:
+#      driver-class-name: com.mysql.jdbc.Driver
+#      username: root
+#      password: root
+#      url: jdbc:mysql://localhost:3306/test2?characterEncoding=utf8&useSSL=true
